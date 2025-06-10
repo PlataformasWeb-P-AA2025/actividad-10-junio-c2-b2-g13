@@ -13,3 +13,4 @@
 ### Segunda Parte
 
 * Seguir indicaciones
+* Para ejecutar el proyecto de flask revisar el archivo info.md
