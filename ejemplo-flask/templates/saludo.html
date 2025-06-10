@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Definimos el idioma de la página como español -->
 <head>
-    <meta charset="UTF-8">
-    <title>Ejemplo Flask MVC</title>
+    <meta charset="UTF-8"> <!-- Configuramos la codificación de caracteres para soportar caracteres especiales -->
+    <title>Ejemplo Flask MVC</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
 </head>
 <body>
-    <h1>¡Hola, {{ nombre or 'Invitado' }}!</h1>
-    <p>Este es un ejemplo básico de un script Flask en el patrón MVC.</p>
-    <form method="GET" action="/saludo">
-        <label for="name">Escribe tu nombre: </label>
-        <input type="text" id="name" name="name">
-        <input type="submit" value="Enviar">
+    <h1>¡Hola, {{ nombre or 'Invitado' }}!</h1> 
+    <!-- Mostramos un saludo personalizado basado en la variable "nombre" proporcionada por Flask.
+         Si no hay nombre, se muestra "Invitado" por defecto. -->
+
+    <p>Este es un ejemplo básico de un script Flask en el patrón MVC.</p> 
+    <!-- Mensaje introductorio sobre el propósito de la página -->
+
+    <form method="GET" action="/saludo"> 
+        <!-- Formulario que enviará una solicitud GET a la ruta "/saludo" -->
+
+        <label for="name">Escribe tu nombre: </label> 
+        <!-- Etiqueta para el campo de entrada de nombre -->
+
+        <input type="text" id="name" name="name"> 
+        <!-- Campo de entrada donde el usuario escribe su nombre -->
+
+        <input type="submit" value="Enviar"> 
+        <!-- Botón para enviar el formulario -->
     </form>
 </body>
 </html>
